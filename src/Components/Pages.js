@@ -13,7 +13,7 @@ const Pages =()=>{
         setCurrentPage(page);
     };
     return(
-        <div className="pages">
+        <div className="pages flex justify-center mt-4">
          
             {startPage>1&&<button onClick={()=>handleClick(startPage-1)}>...</button>}
             {[...Array(endPage- startPage+1)].map((_,index)=>{

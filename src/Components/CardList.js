@@ -22,7 +22,7 @@ import { type } from '@testing-library/user-event/dist/type';
     const currentPosts = posts.slice(indexofFirstPost,indexofLastPost);
 
   return (
-    <div className='card-list'>
+    <div className='grid grid-cols-3 gap-4 justify-center'>
         {currentPosts.map(post =>(
             <Card key={post.id} post={post}/>
         ))}
